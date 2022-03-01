@@ -104,7 +104,7 @@ button_9 = tk.Button(
 button_0 = tk.Button(
     text="0",
     fg="green",
-    width=16,
+    width=11,
     height=2,
     command=get_user_0
 )
@@ -153,7 +153,7 @@ button_6.grid(row=2, column=3)
 button_7.grid(row=3, column=1)
 button_8.grid(row=3, column=2)
 button_9.grid(row=3, column=3)
-button_0.grid(row=4, column=1, columnspan=3)
+button_0.grid(row=4, column=0, columnspan=3)
 button_plus.grid(row=0, column=4)
 button_minus.grid(row=1, column=4)
 button_nasobeni.grid(row=2, column=4)
