@@ -20,7 +20,18 @@ label1 = tk.Label(
 
 label1.pack()
 
-button1 = tk.Button(text="Klik!!!")
+entry1 = tk.Entry(
+    width=20,
+)
+entry1.pack()
+
+button1 = tk.Button(
+    text="Klik!!!",
+    bg="black",
+    fg="green",
+    width=20,
+    height=2
+)
 
 button1.pack()
 
