@@ -17,6 +17,11 @@ label1 = tk.Label(
     background="black",
     foreground="white"
 )
+
 label1.pack()
+
+button1 = tk.Button(text="Klik!!!")
+
+button1.pack()
 
 window.mainloop()
