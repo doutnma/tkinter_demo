@@ -37,7 +37,15 @@ def get_user_plus():
     entry1.insert(tk.END, "+")
 def get_user_minus():
     entry1.insert(tk.END, "-")
-
+def get_user_desetinne_cislo():
+    entry1.insert(tk.END, ".")
+def get_user_rovna_se():
+    user_input = entry1.get()
+    entry1.delete(0, tk.END)
+    values = eval(user_input)
+    entry1.insert(tk.END,values)
+def get_user_smazani():
+    entry1.delete(0, tk.END)
 button_1 = tk.Button(
     text="1",
     fg="green",
@@ -78,7 +86,7 @@ button_6 = tk.Button(
     fg="green",
     width=5,
     height=2,
-command=get_user_6
+    command=get_user_6
 )
 button_7 = tk.Button(
     text="7",
@@ -104,7 +112,7 @@ button_9 = tk.Button(
 button_0 = tk.Button(
     text="0",
     fg="green",
-    width=11,
+    width=5,
     height=2,
     command=get_user_0
 )
@@ -141,9 +149,22 @@ button_rovna_se = tk.Button(
     fg="blue",
     width=5,
     height=2,
-    #command=get_user_input
+    command=get_user_rovna_se
 )
-
+button_smazani = tk.Button(
+    text="AC",
+    fg="blue",
+    width=5,
+    height=2,
+    command=get_user_smazani
+)
+button_desetinne_cislo = tk.Button(
+    text=".",
+    fg="blue",
+    width=5,
+    height=2,
+    command=get_user_desetinne_cislo
+)
 button_1.grid(row=1, column=1)
 button_2.grid(row=1, column=2)
 button_3.grid(row=1, column=3)
@@ -153,11 +174,13 @@ button_6.grid(row=2, column=3)
 button_7.grid(row=3, column=1)
 button_8.grid(row=3, column=2)
 button_9.grid(row=3, column=3)
-button_0.grid(row=4, column=0, columnspan=3)
-button_plus.grid(row=0, column=4)
-button_minus.grid(row=1, column=4)
-button_nasobeni.grid(row=2, column=4)
-button_deleni.grid(row=3, column=4)
-button_rovna_se.grid(row=4, column=4)
+button_0.grid(row=4, column=1)
+button_desetinne_cislo.grid(row=4, column=3)
+button_smazani.grid(row=0, column=4)
+button_plus.grid(row=1, column=4)
+button_minus.grid(row=2, column=4)
+button_nasobeni.grid(row=3, column=4)
+button_rovna_se.grid(row=4, column=2)
+button_deleni.grid(row=4, column=4)
 
 window.mainloop()
