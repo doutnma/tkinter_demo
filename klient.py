@@ -1,7 +1,10 @@
 import socket
-s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s = socket.socket(
+    socket.AF_INET,
+    socket.SOCK_STREAM
+)
 
-host = socket.gethostname()
+host = 'DST22812'
 port = 2205
 
 s.connect((host, port))

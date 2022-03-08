@@ -10,7 +10,7 @@ def get_user_input():
     elif user_input == "Vojta Neymar 4D":
         messagebox.showinfo("Pozdráveček", "Čaute tiktokéři " + "!!!")
         entry1.delete(0, tk.END)
-    elif user_input == "Jiří Š.":
+    elif user_input == "Jiří Š. - láska na celý život!!!":
         messagebox.showinfo("Pozdráveček", "Class diagram, Sekvenční, Use Case, Statechart " + "!!!")
         entry1.delete(0, tk.END)
     else:
