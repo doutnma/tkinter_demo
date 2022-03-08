@@ -15,9 +15,9 @@ print(msg.decode('ascii'))
 s.close()
 
 def get_user_input():
-    msg = entry1.get()
+    msg_back = entry1.get()
     label1 = tk.Label(
-        text=msg,
+        text=msg_back,
         bg="black",
         fg="white",
         width=20,
