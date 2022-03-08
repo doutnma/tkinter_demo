@@ -46,6 +46,7 @@ def get_user_rovna_se():
     entry1.insert(tk.END,values)
 def get_user_smazani():
     entry1.delete(0, tk.END)
+
 button_1 = tk.Button(
     text="1",
     fg="green",
@@ -165,6 +166,7 @@ button_desetinne_cislo = tk.Button(
     height=2,
     command=get_user_desetinne_cislo
 )
+
 button_1.grid(row=1, column=1)
 button_2.grid(row=1, column=2)
 button_3.grid(row=1, column=3)
