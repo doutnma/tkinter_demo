@@ -21,12 +21,13 @@ def get_user_input():
         bg="black",
         fg="white",
         width=20,
+        height=1
     )
     label1.grid(row=1, column=1)
 
 window = tk.Tk()
 window.geometry("100x100")
-window.title("Chat")
+window.title("Četík")
 
 entry1 = tk.Entry(
     width=20
