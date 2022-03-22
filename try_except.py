@@ -1,16 +1,17 @@
 while True:
     try:
         vstup = int(input())
-        file = open("file neexistuje", "r")
+        file = open("file neexistuje, sad", "r")
         a = 3 + vstup
     except ValueError:
-        print("Zadejte číslo, dik dik")
+        print("Zadej číslo, dik dik")
 
     except Exception as e:
-        print("Nastala chyba, bohužel")
+        print("Kámo, máš tam chybu")
         print(e)
     else:
-        print("Vše v pořádku :D")
-
+        print("Pohoda :D")
+    """
     finally:
         file.close()
+    """
