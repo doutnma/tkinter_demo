@@ -21,9 +21,7 @@ def rozesilani_zprav(connection: socket.socket, address: str):
                                 aktivni_users.remove(connection)
 
             else:
-                # Kontrola, zda-li je uživatel v aktivni_users
                 if connection in aktivni_users:
-                    # odstranění uživatele z aktivni_users
                     connection.close()
                     aktivni_users.remove(connection)
                 break
