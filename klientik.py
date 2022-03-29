@@ -33,7 +33,7 @@ def login():
         labelName.grid_remove()
         name.grid_remove()
 
-        errMsg = tk.Label(text="Připojeno !")
+        errMsg = tk.Label(text="Připojeno!")
 
         time.sleep(1)
         errMsg.grid_remove()
@@ -66,7 +66,6 @@ labelIP = tk.Label(
 ip = tk.Entry(
     width=20
 )
-
 labelPort = tk.Label(
     text="Zadejte Port",
     fg="red",

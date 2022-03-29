@@ -43,8 +43,8 @@ s.bind((host, port))
 while True:
     s.listen()
     socket_connection, address = s.accept()
-    print(address, ' Připojeno')
-    hi = " {} se pripojil!".format(address)
+    print(address, 'Připojeno')
+    hi = " {} se připojil!".format(address)
     socket_connection.sendall(str.encode(hi))
 
     for client_conn in aktivni_users:
