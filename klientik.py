@@ -55,26 +55,61 @@ def send():
 window = tk.Tk()
 window.geometry("400x300")
 window.title("Četík")
-
 s = socket.socket()
 
-labelIP = tk.Label(text="Zadejte IP adresu serveru")
-ip = tk.Entry()
+labelIP = tk.Label(
+    text="Zadejte IP adresu serveru",
+    fg="red",
+    bg="black",
+    width=20
+)
+ip = tk.Entry(
+    width=20
+)
 
-labelPort = tk.Label(text="Zadejte Port")
-port = tk.Entry()
+labelPort = tk.Label(
+    text="Zadejte Port",
+    fg="red",
+    bg="black",
+    width=20
+)
+port = tk.Entry(
+    width=20
+)
 
-labelIP.grid(sticky="S")
-ip.grid(sticky="S")
-
-labelPort.grid(sticky="S")
-port.grid(sticky="S")
+labelIP.grid(
+    sticky="S",
+    column=0,
+    row = 1
+)
+ip.grid(
+    sticky="S",
+    column=1,
+    row=1
+)
+labelPort.grid(
+    sticky="S",
+    column=0,
+    row=2
+)
+port.grid(
+    sticky="S",
+    column=1,
+    row=2
+)
+enterLogin = tk.Button(
+    text="Připojit",
+    command=login,
+    width= 20
+)
+enterLogin.grid(
+    sticky="S",
+    column=1,
+    row=3
+)
 
 labelName = tk.Label(text="Přezdívka")
 name = tk.Entry()
-
-enterLogin = tk.Button(text="Připojit", command=login)
-enterLogin.grid(sticky="S")
 
 messageText = tk.Entry()
 sendButton = tk.Button(text="Odeslat", command=send)

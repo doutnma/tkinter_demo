@@ -39,13 +39,13 @@ s = socket.socket()
 host = socket.gethostname()
 print(' Serverík běží na adrese : ', host)
 port = 3302
-print(' Port : ', port)
+print(' Portíček : ', port)
 s.bind((host, port))
 
 while True:
     s.listen()
     socket_connection, address = s.accept()
-    print(address, ' Se připojil')
+    print(address, ' Připojeno')
     hi = " {} se pripojil!".format(address)
     socket_connection.sendall(str.encode(hi))
 
