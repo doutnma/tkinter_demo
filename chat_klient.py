@@ -54,7 +54,7 @@ def send():
 
 window = tk.Tk()
 window.geometry("400x300")
-window.title("Četíček")
+window.title("Četík")
 s = socket.socket()
 
 labelIP = tk.Label(
