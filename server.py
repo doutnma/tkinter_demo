@@ -13,7 +13,6 @@ logger.setLevel(logging.DEBUG)
 aktivni_users = []
 
 def rozesilani_zprav(connection: socket.socket, address: str):
-
     while True:
         try:
             msg = connection.recv(1024)
@@ -45,7 +44,7 @@ s = socket.socket()
 host = socket.gethostname()
 print(' Adresa Serveríku: ', host)
 
-port = 8080
+port = 3304
 print(' Portík: ', port)
 s.bind((host, port))
 
